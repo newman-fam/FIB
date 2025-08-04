@@ -1460,9 +1460,9 @@
             </div>
             <ul class="notch-nav-links" id="notchNavLinks">
                 <li><a href="#home">Home</a></li>
-                <!-- <li><a href="#legislation">Законодательная база</a></li>
-            <li><a href="#uk">Уголовный кодекс</a></li>
-            <li><a href="#rules">Основные правила</a></li> -->
+                 <li><a href="#legislation">Наши отделы</a></li>
+            <!-- <li><a href="#uk">Уголовный кодекс</a></li>
+            <li><a href="#rules">Основные правила</a></li>  -->
                 <li><a href="#useful-links">Полезные ссылки</a></li>
                 <li><a href="#faq">Частые вопросы</a></li>
             </ul>
@@ -2168,7 +2168,7 @@
             });
         });
 
-        const ADMIN_PASSWORD = 'admin6988';
+        const ADMIN_PASSWORD = 'admin';
         let isAdmin = false;
 
 
@@ -2190,19 +2190,6 @@
             }
         }
 
-
-        document.getElementById('loginForm').addEventListener('submit', function (e) {
-            e.preventDefault();
-            const password = document.getElementById('adminPassword').value;
-
-            if (password === ADMIN_PASSWORD) {
-                isAdmin = true;
-                localStorage.setItem('isAdmin', 'true');
-                updateUI();
-            } else {
-                alert('Неверный пароль');
-            }
-        });
 
 
         document.getElementById('postForm').addEventListener('submit', function (e) {
